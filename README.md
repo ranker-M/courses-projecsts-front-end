@@ -2,9 +2,9 @@
 
 This repo contains homeworks and projects that i have done while I was **learning front-end development** from **courses**. Bootcamps and relatively big proejects will have different repos.
 
-## Why this repo needed?
+## Why this repo is needed?
 
-To **share** my homeworks with courses. Many courses **check progress** and **their homeworks** via **github**.
+First of all, to **share** my homeworks with courses. Many courses **check progress** and **their homeworks** via **github**.
 
 Many projects in this repo probably **won't** be too **complicated or large**. These projects are for **learning and practising purpose**.
 
