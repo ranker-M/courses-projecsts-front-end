@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box practise</title>
+
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        nav a:link,
+        nav a:visited {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            background-color: rgb(42, 110, 199);
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 0px;
+            margin: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        nav ul li a:hover {
+            background: rgb(62, 124, 103);
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<nav>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Our Products</a></li>
+        <li><a href="">Conact Us</a></li>
+    </ul>
+</nav>
+
+</html>
