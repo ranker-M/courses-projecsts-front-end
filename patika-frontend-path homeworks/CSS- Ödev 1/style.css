@@ -1,0 +1,117 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Navigation and logo */
+header {
+  font-size: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-bottom: 3px solid rgb(53, 53, 53, 0.9);
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border: 0.5px solid rgb(95, 26, 26);
+  border-radius: 5px;
+  display: block;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(206, 43, 43);
+}
+
+/* Footer Social Media Links and Copyrights */
+/* Footer View */
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-top: 3px solid rgb(53, 53, 53);
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+}
+/* Footer Links */
+footer nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+footer nav ul li a {
+  background: white;
+  padding: 0px;
+  line-height: 0px;
+  border: none;
+}
+footer nav ul li a:hover {
+  background-color: rgb(228, 49, 49);
+}
+
+.github a {
+  border-radius: 20px;
+}
+
+/* Main grid view */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+main section {
+  border: 1px solid rgba(97, 94, 94, 0.623);
+  min-height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Main section parts- youtube and text */
+main {
+  max-width: 900px;
+}
+main section iframe {
+  max-height: 300px;
+  max-width: 400px;
+}
+
+main section p {
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+main section p a {
+  text-decoration: none;
+  color: rgb(255, 7, 7);
+}
+
+main section p a:hover {
+  color: rgb(129, 0, 0);
+}
