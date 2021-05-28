@@ -82,34 +82,39 @@ const menu = [
   },
 ];
 
+// Add buttons to button Container
 let btnContainer=document.querySelector(".btn-container");
 let category=new Set(["All"].concat(menu.map(e=>e.category)));
 category.forEach((val)=>{
+  // Button created 
   let button=document.createElement("button");
   button.classList="btn btn-outline-dark btn-item";
   button.appendChild(document.createTextNode(val));
+
+  // Button event added
+  button.addEventListener("click",()=>{filter(val)});
+
+  // Button added to container
   btnContainer.appendChild(button);
 });
 
 let section=document.querySelector(".section-center");
 menu.map(e=>{
-
-  // Menu Items
+  // Menu Items Div
   let menuItems=document.createElement("div");
-  menuItems.classList="menu-items col-lg-6 col-sm-12";
+  menuItems.classList=`${e.category} menu-items col-lg-6 col-sm-12`;
   // Img
   let img=document.createElement("img");
   img.src=e.img;
-  console.log(img.src);
   img.alt=e.title;
   img.classList="photo";
   menuItems.appendChild(img);
 
-  // Menu info
+  // Menu info Div
   let menuInfo=document.createElement("div");
   menuInfo.classList="menu-info";
 
-  // Menu title
+  // Menu title Div
   let menuTitle=document.createElement("div");
   menuTitle.classList="menu-title";
   let h4=document.createElement("h4");
@@ -120,7 +125,7 @@ menu.map(e=>{
   h4price.textContent=e.price;
   menuTitle.appendChild(h4price);
 
-  // Menu text
+  // Menu text Div
   let menuText=document.createElement("div");
   menuText.textContent=e.desc;
   menuText.classList="menu-text";
@@ -134,3 +139,26 @@ menu.map(e=>{
   section.appendChild(menuItems);
 });
 
+
+// Button function
+function filter(categoryName){
+  // If cattegory is All show all elements
+  if(categoryName=="All"){
+    let elements=document.querySelectorAll(`.menu-items`);
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.display="flex";
+    }
+  }else{
+    // Show selected category's elements and remove others from screen
+    let categories=[...category].slice(1);
+    let elements=document.querySelectorAll(`.${categories[0]},.${categories[1]},.${categories[2]}`);
+    for (let i = 0; i < elements.length; i++) {
+      if(elements[i].className.includes(categoryName)){
+      elements[i].style.display="flex";
+      }else{
+        elements[i].style.display="none";
+      }
+    }
+
+  }
+}
