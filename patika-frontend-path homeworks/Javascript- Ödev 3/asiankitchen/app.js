@@ -91,3 +91,46 @@ category.forEach((val)=>{
   btnContainer.appendChild(button);
 });
 
+let section=document.querySelector(".section-center");
+menu.map(e=>{
+
+  // Menu Items
+  let menuItems=document.createElement("div");
+  menuItems.classList="menu-items col-lg-6 col-sm-12";
+  // Img
+  let img=document.createElement("img");
+  img.src=e.img;
+  console.log(img.src);
+  img.alt=e.title;
+  img.classList="photo";
+  menuItems.appendChild(img);
+
+  // Menu info
+  let menuInfo=document.createElement("div");
+  menuInfo.classList="menu-info";
+
+  // Menu title
+  let menuTitle=document.createElement("div");
+  menuTitle.classList="menu-title";
+  let h4=document.createElement("h4");
+  h4.textContent=e.title;
+  menuTitle.appendChild(h4);
+  let h4price=document.createElement("h4");
+  h4price.classList="price";
+  h4price.textContent=e.price;
+  menuTitle.appendChild(h4price);
+
+  // Menu text
+  let menuText=document.createElement("div");
+  menuText.textContent=e.desc;
+  menuText.classList="menu-text";
+ 
+  // Sum all parts together
+  menuInfo.appendChild(menuTitle);
+  menuInfo.appendChild(menuText);
+  menuItems.appendChild(menuInfo);
+
+  // Add whole menu to section
+  section.appendChild(menuItems);
+});
+
