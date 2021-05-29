@@ -8,7 +8,7 @@ function showTime(){
     let clockDOC=document.querySelector("#myClock");
     let time = new Date().toLocaleTimeString("tr-TR").split(/:| /).join(":");
 
-    let weekdays=["Pazar","Pazartesi","Salı","Çarsamba","Perşembe","Cuma"];
+    let weekdays=["Pazar","Pazartesi","Salı","Çarsamba","Perşembe","Cuma","Cumartesi"];
     let day= weekdays[new Date().getDay()];
     clockDOC.innerHTML=time+" "+day;
 
