@@ -85,7 +85,17 @@
 			/* border: 5px solid red; */
 		}
 
-		.showcase-box {
+
+		#title-games {
+			/* border: 5px solid purple; */
+			max-width: 80%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.showcase-card {
 			/* border: 3px solid green; */
 			padding: 0px;
 			margin: 10px;
@@ -111,6 +121,10 @@
 
 		#title>h1 {
 			font-size: 135px;
+		}
+
+		#games-title {
+			font-size: 80px;
 		}
 	</style>
 	<title>BioWare Tribute Page</title>
@@ -159,44 +173,49 @@
 
 		<!-- Game List Section -->
 		<section id="showcase-container">
-			<figure id="showcase" class="shadow-box">
-				<!-- Baldurs Gate 2 -->
-				<div class="showcase-box">
-					<img class="showcase-image"
-						src="https://s1.gaming-cdn.com/images/products/2415/orig/baldurs-gate-ii-enhanced-edition-cover.jpg"
-						alt="image">
-				</div>
-				<!-- Knights of the old Republic -->
-				<div class="showcase-box">
-					<img class="showcase-image"
-						src="https://i.pinimg.com/originals/5f/b8/4c/5fb84c4835e52854cb781b3c44646744.jpg" alt="image">
-				</div>
-				<!-- Dragon Age Origins -->
-				<div class="showcase-box">
-					<img class="showcase-image"
-						src="https://cdn-products.eneba.com/resized-products/q8Z0LrvgHTwahr31ZnVp-k8wFasd9mIhI4C7an9kBm0_350x200_1x-0.jpeg"
-						alt="image">
-				</div>
-				<!-- Mass Effect 2 -->
-				<div class="showcase-box">
-					<img class="showcase-image"
-						src="https://macgamesbox.com/wp-content/uploads/d5vdhb2-83cd81cd-0644-4f2f-96a0-88c9c2d3a1f2.jpg"
-						alt="image">
-				</div>
-				<!-- Dragon Age 2 -->
-				<div class="showcase-box">
-					<img class="showcase-image"
-						src="https://www.kolpaper.com/wp-content/uploads/2021/07/Dragon-Age-2-Wallpaper.jpg"
-						alt="image">
-				</div>
-				<!-- Dragon Age: Inquisition -->
-				<div class="showcase-box">
-					<img class="showcase-image"
-						src="https://www.teahub.io/photos/full/26-269427_dragon-age-inquisition-game-art-android-wallpaper-dragon.jpg"
-						alt="image">
-				</div>
+			<div id="title-games" class="shadow-box">
+				<h1 id="games-title">BioWare Games</h1>
 
-			</figure>
+				<figure id="showcase">
+					<!-- Baldurs Gate 2 -->
+					<div class="showcase-card">
+						<img class="showcase-image"
+							src="https://s1.gaming-cdn.com/images/products/2415/orig/baldurs-gate-ii-enhanced-edition-cover.jpg"
+							alt="image">
+					</div>
+					<!-- Knights of the old Republic -->
+					<div class="showcase-card">
+						<img class="showcase-image"
+							src="https://i.pinimg.com/originals/5f/b8/4c/5fb84c4835e52854cb781b3c44646744.jpg"
+							alt="image">
+					</div>
+					<!-- Dragon Age Origins -->
+					<div class="showcase-card">
+						<img class="showcase-image"
+							src="https://cdn-products.eneba.com/resized-products/q8Z0LrvgHTwahr31ZnVp-k8wFasd9mIhI4C7an9kBm0_350x200_1x-0.jpeg"
+							alt="image">
+					</div>
+					<!-- Mass Effect 2 -->
+					<div class="showcase-card">
+						<img class="showcase-image"
+							src="https://macgamesbox.com/wp-content/uploads/d5vdhb2-83cd81cd-0644-4f2f-96a0-88c9c2d3a1f2.jpg"
+							alt="image">
+					</div>
+					<!-- Dragon Age 2 -->
+					<div class="showcase-card">
+						<img class="showcase-image"
+							src="https://www.kolpaper.com/wp-content/uploads/2021/07/Dragon-Age-2-Wallpaper.jpg"
+							alt="image">
+					</div>
+					<!-- Dragon Age: Inquisition -->
+					<div class="showcase-card">
+						<img class="showcase-image"
+							src="https://www.teahub.io/photos/full/26-269427_dragon-age-inquisition-game-art-android-wallpaper-dragon.jpg"
+							alt="image">
+					</div>
+
+				</figure>
+			</div>
 		</section>
 	</main>
 
