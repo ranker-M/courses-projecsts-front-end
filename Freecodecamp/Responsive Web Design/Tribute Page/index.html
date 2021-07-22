@@ -16,10 +16,19 @@
 
 		.bg-origin {
 			background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('https://www.pdvg.it/wp-content/uploads/2020/12/feature.jpg');
+			background-attachment: local !important;
 		}
 
 		.baldurs-gate-bg {
 			background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('https://images7.alphacoders.com/111/1112414.jpg');
+		}
+
+		#main {
+			background-image: url('https://i.pinimg.com/originals/c5/0d/ea/c50deac621d9831f53f86bdc826fabb5.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 
 		/* --- Start Parallax Style -- floors.jpg */
@@ -45,15 +54,16 @@
 			color: white;
 		}
 
-		#img-div {
+		#info-container {
 			position: relative;
-			background-color: white;
+			background-color: rgba(255, 255, 255, 0.2);
+			backdrop-filter: contrast(80%);
+			backdrop-filter: blur(6px);
 			width: 90%;
 			height: auto;
 			margin: 5% 4%;
 			padding: 15px;
 			text-align: center;
-
 		}
 
 		.shadow-box {
@@ -61,7 +71,7 @@
 			box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
 		}
 
-		#img-caption {
+		#bioware-info {
 			font-size: 20px;
 		}
 
@@ -94,6 +104,9 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			background-color: rgba(255, 255, 255, 0.2);
+			backdrop-filter: contrast(80%);
+			backdrop-filter: blur(4px);
 		}
 
 		.showcase-card {
@@ -123,7 +136,8 @@
 		}
 
 		footer>p {
-			color: rgb(98, 98, 98);
+			/* color: rgb(98, 98, 98); */
+			color: white;
 			font-size: 20px;
 		}
 
@@ -171,10 +185,15 @@
 
 		<!-- Bioware info section -->
 
-		<figure id="img-div" class="shadow-box">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/BioWare_2018.svg/1280px-BioWare_2018.svg.png"
-				alt="bioware logo" id="image" />
-			<figcaption id="img-caption">
+		<section id="info-container" class="shadow-box">
+			<figure id="img-div">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/BioWare_2018.svg/1280px-BioWare_2018.svg.png"
+					alt="bioware logo" id="image" />
+				<figcaption id="img-caption">
+					Logo of Bioware game studio.
+				</figcaption>
+			</figure>
+			<article id="bioware-info">
 				<br>
 				<p>BioWare is a Canadian video game developer based in Edmonton, Alberta(Since 2007, the company has
 					been owned by American publisher Electronic Arts).
@@ -189,8 +208,8 @@
 						series</strong> . In 2011, <strong>BioWare</strong> launched their first <strong>massively
 						multiplayer online role-playing game</strong> , <strong>Star Wars: The Old Republic</strong> .
 				</p>
-			</figcaption>
-		</figure>
+			</article>
+		</section>
 
 		<!-- Game List Section -->
 		<section id="showcase-container">
