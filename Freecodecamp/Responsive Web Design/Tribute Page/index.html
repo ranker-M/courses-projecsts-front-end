@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			border: 0;
+			padding: 0;
+		}
+
+		hmtl,
+		body {
+			height: 100%;
+			width: 100%;
+		}
+
+		.bg-origin {
+			background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('https://www.pdvg.it/wp-content/uploads/2020/12/feature.jpg');
+		}
+
+		.baldurs-gate-bg {
+			background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('https://images7.alphacoders.com/111/1112414.jpg');
+		}
+
+		/* --- Start Parallax Style -- floors.jpg */
+		.parallax {
+			height: 1000px;
+			background-attachment: fixed;
+			background-position: left;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align: center;
+		}
+
+		/*--- End Parallax Style --*/
+
+		#title {
+			color: #FFF;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			top: 40%;
+			width: 100%;
+			font-size: 36px;
+			color: white;
+		}
+
+		#img-div {
+			position: relative;
+			background-color: white;
+			width: 90%;
+			height: auto;
+			margin: 5% 4%;
+			padding: 15px;
+			text-align: center;
+
+		}
+
+		.shadow-box {
+			box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2), 7px 7px 6px rgba(0, 0, 0, 0.3), 0px -1px 6px rgba(0, 0, 0, 0.2)
+		}
+
+		#img-caption {
+			font-size: 20px;
+		}
+
+		#image {
+			margin: 20px;
+			max-width: 600px;
+			height: auto;
+		}
+
+		#showcase-container {
+			display: flex;
+			justify-content: center;
+			/* border: 5px solid black; */
+		}
+
+		#showcase {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 20px;
+			justify-content: space-around;
+			max-width: 80%;
+			/* border: 5px solid red; */
+		}
+
+		.showcase-box {
+			/* border: 3px solid green; */
+			padding: 0px;
+			margin: 10px;
+			height: 600px;
+			box-shadow: -7px 0px 6px rgba(0, 0, 0, 0.3), 7px 0px 6px rgba(0, 0, 0, 0.3), 0px -7px 6px rgba(0, 0, 0, 0.3), 0px 7px 6px rgba(0, 0, 0, 0.3);
+		}
+
+		.showcase-image {
+			height: 100%;
+			width: auto;
+			/* -webkit-filter: drop-shadow(5px 5px 5px #222);
+			filter: drop-shadow(5px 5px 5px #222); */
+			filter: brightness(1)
+		}
+
+		.showcase-image:hover {
+			filter: brightness(0.5);
+		}
+
+		#title>h2 {
+			font-size: 30px;
+		}
+
+		#title>h1 {
+			font-size: 135px;
+		}
+	</style>
+	<title>BioWare Tribute Page</title>
+</head>
+
+<body>
+	<!-- <section class="parallax">
+		<div class="parallax-inner">
+			<h1>Parallax</h1>
+		</div>
+	</section> 
+
+	<div class="margin"></div>
+-->
+	<main id="main">
+		<!-- Cover and Title  -->
+		<div class="parallax bg-origin">
+			<div id="title" class="parallax-inner">
+				<h2>One of the Best RPG Developer Studio</h2>
+				<h1>BioWare</h1>
+			</div>
+		</div>
+
+		<!-- Bioware info section -->
+
+		<figure id="img-div" class="shadow-box">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/BioWare_2018.svg/1280px-BioWare_2018.svg.png"
+				alt="bioware logo" id="image" />
+			<figcaption id="img-caption">
+				<br>
+				<p>BioWare is a Canadian video game developer based in Edmonton, Alberta(Since 2007, the company has
+					been owned by American publisher Electronic Arts).
+				</p>
+				<br>
+				<p>
+					BioWare specializes in <strong>role-playing video games</strong>, and achieved recognition for
+					developing highly praised and successful franchises: <strong>Baldur's Gate</strong>,<strong>
+						Neverwinter Nights</strong>, and <strong>Star Wars: Knights of the Old Republic</strong>. They
+					made several other successful games based on <strong>original</strong> intellectual property:
+					<strong>Jade Empire</strong>,<strong>the Mass Effect series</strong> , and <strong>the Dragon Age
+						series</strong> . In 2011, <strong>BioWare</strong> launched their first <strong>massively
+						multiplayer online role-playing game</strong> , <strong>Star Wars: The Old Republic</strong> .
+				</p>
+			</figcaption>
+		</figure>
+
+		<!-- Game List Section -->
+		<section id="showcase-container">
+			<figure id="showcase" class="shadow-box">
+				<!-- Baldurs Gate 2 -->
+				<div class="showcase-box">
+					<img class="showcase-image"
+						src="https://s1.gaming-cdn.com/images/products/2415/orig/baldurs-gate-ii-enhanced-edition-cover.jpg"
+						alt="image">
+				</div>
+				<!-- Knights of the old Republic -->
+				<div class="showcase-box">
+					<img class="showcase-image"
+						src="https://i.pinimg.com/originals/5f/b8/4c/5fb84c4835e52854cb781b3c44646744.jpg" alt="image">
+				</div>
+				<!-- Dragon Age Origins -->
+				<div class="showcase-box">
+					<img class="showcase-image"
+						src="https://cdn-products.eneba.com/resized-products/q8Z0LrvgHTwahr31ZnVp-k8wFasd9mIhI4C7an9kBm0_350x200_1x-0.jpeg"
+						alt="image">
+				</div>
+				<!-- Mass Effect 2 -->
+				<div class="showcase-box">
+					<img class="showcase-image"
+						src="https://macgamesbox.com/wp-content/uploads/d5vdhb2-83cd81cd-0644-4f2f-96a0-88c9c2d3a1f2.jpg"
+						alt="image">
+				</div>
+				<!-- Dragon Age 2 -->
+				<div class="showcase-box">
+					<img class="showcase-image"
+						src="https://www.kolpaper.com/wp-content/uploads/2021/07/Dragon-Age-2-Wallpaper.jpg"
+						alt="image">
+				</div>
+				<!-- Dragon Age: Inquisition -->
+				<div class="showcase-box">
+					<img class="showcase-image"
+						src="https://www.teahub.io/photos/full/26-269427_dragon-age-inquisition-game-art-android-wallpaper-dragon.jpg"
+						alt="image">
+				</div>
+
+			</figure>
+		</section>
+	</main>
+
+</body>
+
+</html>
