@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.button {
+  background-color: red;
+  justify-self: end;
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(190, 7, 7);
+}
