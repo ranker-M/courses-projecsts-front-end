@@ -1,4 +1,3 @@
-/*
 <!DOCTYPE html>
 
 <head>
@@ -15,6 +14,7 @@
 			width: 100%;
 		}
 
+		/* Title background- cover*/
 		.bg-origin {
 			background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url('https://www.pdvg.it/wp-content/uploads/2020/12/feature.jpg');
 			background-attachment: local !important;
@@ -33,28 +33,17 @@
 			background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
 		}
 
+		/* Main Page */
 		#page {
-			/* background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.602) 8%, rgba(248, 248, 248, 0.733) 95%, rgba(0, 0, 0, 1) 100%);
-
-			background-color: black; */
 			padding: 5% 4%;
 			padding-top: 20%;
 			padding-bottom: 0%;
 			display: flex;
 			align-items: center;
 			flex-direction: column;
-
 			background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(192, 24, 24, 0) 8%, rgba(255, 255, 255, 0) 95%, rgba(0, 0, 0, 1) 100%), no-repeat center fixed url('https://i.pinimg.com/originals/c5/0d/ea/c50deac621d9831f53f86bdc826fabb5.jpg');
-			/* background-attachment: local !important;
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover; */
 			background-size: cover;
 		}
-
-
-		/*--- End Cover Style --*/
 
 		#title {
 			color: #FFF;
@@ -79,12 +68,24 @@
 			text-align: center;
 		}
 
+		img {
+			display: block;
+		}
+
 		.shadow-box {
 			box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
 		}
 
-		#bioware-info {
+		#tribute-info {
 			font-size: 20px;
+		}
+
+		#img-div {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 		}
 
 		#image {
@@ -138,6 +139,7 @@
 		}
 
 		.showcase-card {
+			margin: 0px 5px;
 			margin-bottom: 6%;
 			max-width: 400px;
 			display: flex;
@@ -155,7 +157,7 @@
 		}
 
 		.showcase-image:hover {
-			filter: brightness(0.5);
+			filter: brightness(0.4);
 		}
 
 		#title>h2 {
@@ -170,6 +172,37 @@
 			font-size: 80px;
 			text-align: center;
 			margin: 2%;
+		}
+
+		#tribute-link {
+			color: rgb(3, 35, 151);
+			text-decoration: none;
+		}
+
+		#tribute-link:hover {
+			color: rgb(57, 90, 197);
+			text-decoration: none;
+		}
+
+		#bioware-link-div {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		#bioware-link-div>p {
+			display: block;
+			background-color: #fdfdfd96;
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			border-radius: 6px;
+			color: rgb(0, 0, 0);
+			font-size: 24px;
+			font-weight: 500;
+			padding: 6px 16px;
+			text-align: center;
+			text-decoration: none;
+			margin: 50px;
+			backdrop-filter: blur(3px);
 		}
 	</style>
 	<title>BioWare Tribute Page</title>
@@ -196,22 +229,24 @@
 						Logo of Bioware game studio.
 					</figcaption>
 				</figure>
-				<article id="bioware-info">
+				<article id="tribute-info">
 					<br>
-					<p>BioWare is a Canadian video game developer based in Edmonton, Alberta(Since 2007, the company has
+					<p><strong>BioWare</strong> is a Canadian video game developer based in Edmonton, Alberta(Since
+						2007, the company has
 						been owned by American publisher Electronic Arts).
 					</p>
 					<br>
 					<p>
-						BioWare specializes in <strong>role-playing video games</strong>, and achieved recognition for
+						<strong>BioWare</strong> specializes in <strong>role-playing video games</strong>, and achieved
+						recognition for
 						developing highly praised and successful franchises: <strong>Baldur's Gate</strong>,<strong>
 							Neverwinter Nights</strong>, and <strong>Star Wars: Knights of the Old Republic</strong>.
 						They
-						made several other successful games based on <strong>original</strong> intellectual property:
+						made several other successful games based on original intellectual property:
 						<strong>Jade Empire</strong>,<strong>the Mass Effect series</strong> , and <strong>the Dragon
 							Age
-							series</strong> . In 2011, <strong>BioWare</strong> launched their first <strong>massively
-							multiplayer online role-playing game</strong> , <strong>Star Wars: The Old Republic</strong>
+							series</strong> . In 2011, <strong>BioWare</strong> launched their first massively
+						multiplayer online role-playing game , <strong>Star Wars: The Old Republic</strong>
 						.
 					</p>
 				</article>
@@ -220,51 +255,58 @@
 			<!-- Game List Section -->
 			<div id="games-section" class="shadow-box">
 				<h1 id="games-title">BioWare Games</h1>
-
 				<figure id="showcase">
 					<!-- Baldurs Gate 2 -->
 					<div class="showcase-card">
-						<img class="showcase-image"
-							src="https://s1.gaming-cdn.com/images/products/2415/orig/baldurs-gate-ii-enhanced-edition-cover.jpg"
-							alt="image">
+
+						<a href="https://store.steampowered.com/app/257350/Baldurs_Gate_II_Enhanced_Edition/"
+							target="_blank"> <img class="showcase-image"
+								src="https://s1.gaming-cdn.com/images/products/2415/orig/baldurs-gate-ii-enhanced-edition-cover.jpg"
+								alt="image"> </a>
 					</div>
 					<!-- Knights of the old Republic -->
 					<div class="showcase-card">
-						<img class="showcase-image"
-							src="https://i.pinimg.com/originals/5f/b8/4c/5fb84c4835e52854cb781b3c44646744.jpg"
-							alt="image">
+						<a href="https://www.swtor.com/" target="_blank"> <img class="showcase-image"
+								src="https://s3.gaming-cdn.com/images/products/9458/orig/star-wars-the-old-republic-pc-game-origin-cover.jpg"
+								alt="image"> </a>
 					</div>
 					<!-- Dragon Age Origins -->
 					<div class="showcase-card">
-						<img class="showcase-image"
-							src="https://cdn-products.eneba.com/resized-products/q8Z0LrvgHTwahr31ZnVp-k8wFasd9mIhI4C7an9kBm0_350x200_1x-0.jpeg"
-							alt="image">
+						<a href="https://store.steampowered.com/app/17450/Dragon_Age_Origins/" target="_blank"> <img
+								class="showcase-image"
+								src="https://cdn-products.eneba.com/resized-products/q8Z0LrvgHTwahr31ZnVp-k8wFasd9mIhI4C7an9kBm0_350x200_1x-0.jpeg"
+								alt="image"> </a>
 					</div>
 					<!-- Mass Effect 2 -->
 					<div class="showcase-card">
-						<img class="showcase-image"
-							src="https://macgamesbox.com/wp-content/uploads/d5vdhb2-83cd81cd-0644-4f2f-96a0-88c9c2d3a1f2.jpg"
-							alt="image">
+						<a href="https://www.ea.com/games/mass-effect/mass-effect-2" target="_blank"> <img
+								class="showcase-image"
+								src="https://macgamesbox.com/wp-content/uploads/d5vdhb2-83cd81cd-0644-4f2f-96a0-88c9c2d3a1f2.jpg"
+								alt="image"> </a>
 					</div>
 					<!-- Dragon Age 2 -->
 					<div class="showcase-card">
-						<img class="showcase-image"
-							src="https://www.kolpaper.com/wp-content/uploads/2021/07/Dragon-Age-2-Wallpaper.jpg"
-							alt="image">
+						<a href="https://store.steampowered.com/app/1238040/Dragon_Age_II/" target="_blank"> <img
+								class="showcase-image"
+								src="https://www.kolpaper.com/wp-content/uploads/2021/07/Dragon-Age-2-Wallpaper.jpg"
+								alt="image"> </a>
 					</div>
 					<!-- Dragon Age: Inquisition -->
 					<div class="showcase-card">
-						<img class="showcase-image"
-							src="https://www.teahub.io/photos/full/26-269427_dragon-age-inquisition-game-art-android-wallpaper-dragon.jpg"
-							alt="image">
+						<a href="https://store.steampowered.com/app/1222690/Dragon_Age_Inquisition/" target="_blank">
+							<img class="showcase-image"
+								src="https://www.teahub.io/photos/full/26-269427_dragon-age-inquisition-game-art-android-wallpaper-dragon.jpg"
+								alt="image"> </a>
 					</div>
-
 				</figure>
+			</div>
+			<div id="bioware-link-div">
+				<p>For more information visit <a href="https://www.bioware.com/" id="tribute-link" target="_blank">
+						official page</a></p>
 			</div>
 
 			<!-- Footer -->
 			<footer id="footer">
-
 				<p>made by
 					<a href="https://www.linkedin.com/in/meriç-gündüz-198a99186/" target="_blank">Meric
 						Gunduz</a> with ❤️
