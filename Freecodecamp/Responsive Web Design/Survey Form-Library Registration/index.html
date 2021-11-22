@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form-Library Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="center">
+        <h1 id="title">Library Registration Form</h1>
+        <p id="description">We want to learn your preferences to recommend you better books. </p>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Age <span>(Not required but it will help us to understand
+                    you)</span></label>
+            <input type="number" name="age" id="number" placeholder="Your age" min="5" max="120">
+
+            <p>Which option best describes your reading habit?</p>
+            <select id="dropdown" name="habit" required>
+                <option disabled selected value>You are a ...</option>
+                <option value="bookworm">Bookworm</option>
+                <option value="veteran">Veteran reader</option>
+                <option value="rather-than-movies">Someone prefer books rather than movies</option>
+                <option value="beginner">Beginner</option>
+                <option value="other-reasons">I came here to pick a girl, don'mind me</option>
+            </select>
+
+            <p>How much time took you to finish a book?</p>
+            <div class="option-list">
+                <label>
+                    <input name="reading-frequency" value="1-2-days" type="radio" class="input-radio" checked />1-2
+                    days</label>
+                <label>
+                    <input name="reading-frequency" value="1-week" type="radio" class="input-radio" />1 week</label>
+
+                <label><input name="reading-frequency" value="3-4-week" type="radio" class="input-radio" />3-4
+                    week</label>
+
+                <label><input name="reading-frequency" value="more-than-1-month" type="radio" class="input-radio" />More
+                    than 1 month</label>
+            </div>
+
+
+            <p>
+                Which genres you like to read?
+            </p>
+            <div class="option-list">
+                <label><input name="genre" value="Fantasy" type="checkbox" />Fantasy</label>
+                <label>
+                    <input name="genre" value="Romance" type="checkbox" />Romance</label>
+                <label><input name="genre" value="classics" type="checkbox" />Classics</label>
+                <label><input name="genre" value="mystery" type="checkbox" />Mystery</label>
+                <label><input name="genre" value="science-fiction" type="checkbox" />Science fiction</label>
+                <label><input name="genre" value="history" type="checkbox" />History</label>
+            </div>
+
+            <p>Why do you feel this way?</p>
+            <textarea id="feelings" name="feelings" placeholder="Enter your mind here..."></textarea>
+
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

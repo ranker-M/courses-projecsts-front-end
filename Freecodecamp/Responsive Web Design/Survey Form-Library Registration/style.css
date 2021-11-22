@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.18em;
+  font-family: "Shippori Antique", sans-serif;
+}
+body {
+  background: rgb(57, 103, 133);
+  background: linear-gradient(
+    180deg,
+    rgb(77, 141, 184) 0%,
+    rgba(13, 21, 27, 1) 100%
+  );
+}
+
+#title {
+  margin-bottom: 3px;
+  text-align: center;
+}
+#description {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+main.center {
+  width: 70%;
+  height: 100%;
+  padding: 20px 40px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 0.5px rgba(0, 0, 0, 0.582);
+  background-color: rgba(255, 255, 255, 0.555);
+}
+
+main form {
+  display: flex;
+  flex: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+main label,
+input,
+select,
+p,
+button,
+textarea {
+  width: 100%;
+  font-family: inherit;
+}
+
+label {
+  display: block;
+}
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.option-list input {
+  width: 1.5em;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  font-size: 20px;
+  padding: 1px 5px;
+}
+input[type="text"] {
+  margin-bottom: 10px;
+}
+input[type="email"] {
+  margin-bottom: 10px;
+}
+
+#submit {
+  margin-top: 15px;
+  font-size: 1.1em;
+  background-color: rgb(35, 185, 30);
+  color: white;
+  border: 0.1px solid black;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+}
+#submit:hover {
+  background-color: rgb(44, 221, 38);
+}
+
+textarea {
+  height: 150px;
+  font-size: 0.8em;
+  padding: 3px 5px;
+}
+
+label span {
+  font-size: 0.7em;
+  color: rgb(39, 39, 39);
+}
