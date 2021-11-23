@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC:Product Landing Page-Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header and navbar -->
+    <header id="header">
+        <img src="https://www.freepnglogos.com/uploads/red-netflix-logo-text-png-3.png" alt="company-logo"
+            id="header-img">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#cover-wrapper">Get Started</a>
+            <a class="nav-link" href="#what-is-netflix">What is Netflix</a>
+            <a class="nav-link" href="#video">Video</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Cover and Get started form -->
+        <div id="cover-wrapper">
+            <img class="cover-img"
+                src="https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/a732cd3c-8efd-45a0-8a6e-e40222b91387/TR-en-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+                srcset="https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/a732cd3c-8efd-45a0-8a6e-e40222b91387/TR-en-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/a732cd3c-8efd-45a0-8a6e-e40222b91387/TR-en-20211115-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/a732cd3c-8efd-45a0-8a6e-e40222b91387/TR-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w"
+                alt="">
+            <div class="gradient"></div>
+            <div class="gradient all-over-gradient"></div>
+            <div id="topic-card">
+                <!-- Get started section with a form -->
+                <h1 class="title-h1">Unlimited movies, TV shows, and more.
+                </h1>
+                <h2 class="title-h2">Watch anywhere. Cancel anytime.</h2>
+                <h3 class="title-h3">Ready to watch? Enter your email to create or restrart your membership.</h3>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                    <input type="submit" value="Get Started >" id="submit">
+                </form>
+            </div>
+        </div>
+
+        <section id="what-is-netflix">
+            <!-- What is netflix explanation section -->
+            <div class="feature-wrapper">
+                <div class="feature-card">
+                    <div class="feature-text">
+                        <h1>Enjoy on your TV</h1>
+                        <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Netflix_-_English.jpg" alt="">
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <div class="feature-card wrap-reverse">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Netflix_-_English.jpg" alt="">
+                    <div class="feature-text">
+                        <h1>Download your shows to watch offline.</h1>
+                        <h2>Save your favorites easily and always have something to watch.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <div class="feature-card">
+                    <div class="feature-text">
+                        <h1>Watch everywhere.</h1>
+                        <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying
+                            more.
+                        </h2>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Netflix_-_English.jpg" alt="">
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <div class="feature-card wrap-reverse">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Netflix_-_English.jpg" alt="">
+
+                    <div class="feature-text">
+                        <h1>Create profiles for kids.</h1>
+                        <h2>Send kids on adventures with their favorite characters in a space made just for
+                            them—free with
+                            your
+                            membership.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <!-- Embeded video -->
+                <div class="feature-card video-card">
+                    <iframe id="video" src="https://www.youtube.com/embed/eDZd6nFa5Zs" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>
