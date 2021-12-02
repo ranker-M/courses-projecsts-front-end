@@ -6,12 +6,13 @@ body {
   padding: 0px;
   font-size: 1.18em;
   font-family: "Shippori Antique", sans-serif;
+  min-width: 600px;
 }
 body {
   background: rgb(57, 103, 133);
   background: linear-gradient(
     180deg,
-    rgb(77, 141, 184) 0%,
+    rgb(39, 39, 39) 0%,
     rgba(13, 21, 27, 1) 100%
   );
 }
@@ -34,7 +35,7 @@ main.center {
   display: flex;
   flex-direction: column;
   box-shadow: 3px 3px 0.5px rgba(0, 0, 0, 0.582);
-  background-color: rgba(255, 255, 255, 0.555);
+  background-color: rgba(255, 255, 255, 0.904);
 }
 
 main form {
@@ -107,4 +108,10 @@ textarea {
 label span {
   font-size: 0.7em;
   color: rgb(39, 39, 39);
+}
+
+@media only screen and (min-width: 1100px) {
+  main.center {
+    width: 50%;
+  }
 }
