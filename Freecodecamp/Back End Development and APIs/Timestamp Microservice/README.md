@@ -2,4 +2,4 @@
 
 <h1> Freecodecamp Backend and API Project 1 Solution</h1>
 
-I made this project by using Replit.com boilerplate of the project. You can see Replit workspace from [here](https://replit.com/@ranker-M/boilerplate-project-timestamp#server.js) or upload this file to a replit workspace.
+I made this project by using Replit.com boilerplate from freecodecamp. You can see Replit workspace from [here](https://replit.com/@ranker-M/boilerplate-project-timestamp#server.js) or upload this file to a replit workspace to run project.
