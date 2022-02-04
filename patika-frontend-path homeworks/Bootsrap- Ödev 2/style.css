@@ -1,0 +1,56 @@
+.navbar {
+  background-color: white !important;
+}
+
+.profile-img {
+  height: 24px;
+  width: 24px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#sidebar-main-profile {
+  height: 64px;
+  width: 64px;
+}
+
+#side-nav {
+  min-width: 250px;
+}
+
+.side-bar-profile-img {
+  height: 36px;
+  width: 36px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.follow {
+  color: #0095f6;
+  font-size: 0.8rem;
+}
+
+.side-username:hover {
+  text-decoration: underline !important;
+}
+
+.footer-navigation {
+  line-height: 0.9rem;
+  margin: 10px 0px;
+}
+
+.footer-navigation a {
+  color: #007bff;
+  display: inline;
+  padding: 0px;
+  font-size: 11px;
+  line-height: 0rem;
+}
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.post-options a {
+  padding: 4px 8px;
+  color: black;
+}
