@@ -16,6 +16,10 @@ File names display the reason and root of the projects.
 
 ## Live Poject List:
 
+- **Online code editor**: [live page](https://code-editor-live.herokuapp.com), [repo]( https://github.com/ranker-M/code-editor-live)
+
+- **LinkedIn Bootstrap Clone**: [live page](http://mericgunduz.me/Bootstrap-%20Linkedin%20Clone/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Bootstrap-%20Linkedin%20Clone)
+
 - **Tribute Page Bioware**: [live page](https://ranker-m.github.io/Tribute%20Page%20Bioware/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Tribute%20Page%20Bioware)
                           
 
